@@ -34,7 +34,7 @@ This project is a Node.js Express application that focuses on querying the `dbms
 1. Clone the repository to your local machine:
    ```bash
    git clone <repository-url>
-   cd DBMS_Project-II
+   cd MongoDB_PatientManagementSystem
    ```
 
 2. Install the dependencies:
@@ -128,4 +128,7 @@ To install and run MongoDB using Docker, follow these steps:
    ```bash
    node runAllQueries.js
    ```
+## Project Information
+1.The document includes a business requirements document with an inheritance diagram.  
+2.MongoDB_PatientManagementSystem includes a Node.js project with queries.  
 
