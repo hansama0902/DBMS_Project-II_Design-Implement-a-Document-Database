@@ -1,6 +1,6 @@
 # DBMS_Project-II
 
-This project is a Node.js Express application that focuses on querying the `dbms_project` database using MongoDB. The dataset includes patient management information, and the project performs a series of queries to extract useful insights from the data.
+This project is a Node.js Express application that focuses on querying the `MongoDB_PatientManagementSystem` database using MongoDB. The dataset includes patient management information, and the project performs a series of queries to extract useful insights from the data.
 
 ## Project Structure
 
