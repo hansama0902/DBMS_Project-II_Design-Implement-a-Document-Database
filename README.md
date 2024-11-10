@@ -20,6 +20,35 @@ This project is a Node.js Express application that focuses on querying the `Mong
 - **Queries (`Query1.js` to `Query5.js`)**: These files contain individual query scripts that perform various analyses on the data within the `MongoDB_PatientManagementSystem` database.
 
 - **`runAllQueries.js`**: This script is used to execute all queries sequentially, including `init.js` and `Query1.js` to `Query5.js`. It ensures that the data is imported first before running the queries, and each query is executed in order.
+## MongoDB Backup and Restore Guide
+
+We can use the `mongodump` command to export a MongoDB database. For example, the following command exports the `patient_management` database to the `backup` directory on the desktop:
+
+```bash
+mongodump --db patient_management --out ~/Desktop/backup/
+```
+
+- `--db patient_management`: Specifies the name of the database to export.
+- `--out ~/Desktop/backup/`: Specifies the path where the export files will be saved.
+
+After running this command, the `patient_management` database will be exported to the `~/Desktop/backup/patient_management` directory, generating files including `.bson` and `.metadata.json`.
+
+To restore a MongoDB database from the previously exported files, you can use the `mongorestore` command. For example, to restore the `patient_management` database from the backup directory on the desktop:
+
+```bash
+mongorestore --dir ~/Desktop/backup/patient_management
+```
+
+- `--dir ~/Desktop/backup/patient_management`: Specifies the directory path that contains the exported data.
+
+We can also use the `--nsInclude` parameter of `mongorestore` to specify which database and collections to restore. For example, if  BSON files are located in the `db` directory, you can run the following command:
+
+```bash
+mongorestore --nsInclude "patient_management.*" db
+```
+
+- `--nsInclude "patient_management.*"`: Specifies to restore all collections related to the `patient_management` database.
+- `db`: Specifies the directory that contains the `.bson` and `.metadata.json` files.  
 
 ## Prerequisites
 
