@@ -24,7 +24,7 @@ async function updateDiseasesName(patientId, oldDiseaseName, newDiseaseName) {
     await client.close();
   }
 }
-
+// change it's part 
 updateDiseasesName("patient_id_001", "Diabetes", "Type 2 Diabetes").catch(console.dir);
 
 

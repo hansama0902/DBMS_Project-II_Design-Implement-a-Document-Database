@@ -1,1 +1,1 @@
-{"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_"}],"uuid":"fed66af464ee4758938bfca52f3b4de1","collectionName":"prescriptions","type":"collection"}
+{"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_"}],"uuid":"0fefb9f916524468a423c339738ccfed","collectionName":"prescriptions","type":"collection"}
