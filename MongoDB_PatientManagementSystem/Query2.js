@@ -9,20 +9,20 @@ async function run() {
     const database = client.db("patient_management");
     const appointmentsCollection = database.collection("appointments");
 
-    // 聚合查询：复杂查询条件（多个表达式和逻辑连接符）
+    // Aggregation query: Complex query conditions (multiple expressions and logical operators)
     const complexCriteriaAppointments = await appointmentsCollection
       .aggregate([
         {
           $match: {
             $or: [
-              // 条件1：预约日期在 "2024-11-01" 到 "2024-11-30" 之间
+              // Condition 1: Appointment date is between '2024-11-01' and '2024-11-30
               {
                 appointment_date: {
                   $gte: "2024-11-01",
                   $lte: "2024-11-30"
                 }
               },
-              // 条件2：由特定医生（Dr. Jane Smith）进行的预约并且测试类型为 "Blood Test"
+              // Condition 2: Appointment conducted by a specific doctor (Dr. Jane Smith) and test type is 'Blood Test'
               {
                 $and: [
                   { "doctor_reference.doctor_name": "Dr. Jane Smith" },

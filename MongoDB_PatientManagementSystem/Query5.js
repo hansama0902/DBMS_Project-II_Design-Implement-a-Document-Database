@@ -9,7 +9,7 @@ async function run() {
     const database = client.db("patient_management");
     const patientsCollection = database.collection("patients");
 
-    // 聚合查询: 统计每个病人病史中的独特疾病数量，并列出疾病名称
+    // Aggregation query: Count the number of diseases in each patient's medical history and list the disease names.
     const patientDiseaseCounts = await patientsCollection
       .aggregate([
         {
@@ -27,13 +27,12 @@ async function run() {
             _id: 1,
             patient_name: 1,
             total_diseases: { $size: "$diseases" },
-            diseases: 1 // 保留独特的疾病名称
+            diseases: 1 
           }
         }
       ])
       .toArray();
 
-    // 整洁输出每个病人的信息
     patientDiseaseCounts.forEach((patient) => {
       console.log(`Patient ID: ${patient._id}`);
       console.log(`Name: ${patient.patient_name}`);
