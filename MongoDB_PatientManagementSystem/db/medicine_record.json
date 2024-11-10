@@ -1,0 +1,113 @@
+[
+    {
+      "_id": "record_001",
+      "patient_id": "patient_id_001",
+      "medication_issuance_frequency": "daily",
+      "medication_issuance_time": "08:00 AM",
+      "medicine": {
+        "medicine_id": "med_001",
+        "medicine_name": "Aspirin",
+        "dosage_frequency": "once a day"
+      }
+    },
+    {
+      "_id": "record_002",
+      "patient_id": "patient_id_002",
+      "medication_issuance_frequency": "twice daily",
+      "medication_issuance_time": "08:00 AM, 08:00 PM",
+      "medicine": {
+        "medicine_id": "med_002",
+        "medicine_name": "Metformin",
+        "dosage_frequency": "twice a day"
+      }
+    },
+    {
+      "_id": "record_003",
+      "patient_id": "patient_id_003",
+      "medication_issuance_frequency": "weekly",
+      "medication_issuance_time": "Monday 08:00 AM",
+      "medicine": {
+        "medicine_id": "med_003",
+        "medicine_name": "Ventolin",
+        "dosage_frequency": "once a week"
+      }
+    },
+    {
+      "_id": "record_004",
+      "patient_id": "patient_id_004",
+      "medication_issuance_frequency": "daily",
+      "medication_issuance_time": "09:00 PM",
+      "medicine": {
+        "medicine_id": "med_004",
+        "medicine_name": "Sertraline",
+        "dosage_frequency": "once a day"
+      }
+    },
+    {
+      "_id": "record_005",
+      "patient_id": "patient_id_005",
+      "medication_issuance_frequency": "twice daily",
+      "medication_issuance_time": "07:00 AM, 08:00 PM",
+      "medicine": {
+        "medicine_id": "med_005",
+        "medicine_name": "Lisinopril",
+        "dosage_frequency": "twice a day"
+      }
+    },
+    {
+      "_id": "record_006",
+      "patient_id": "patient_id_006",
+      "medication_issuance_frequency": "daily",
+      "medication_issuance_time": "08:00 AM",
+      "medicine": {
+        "medicine_id": "med_006",
+        "medicine_name": "Levothyroxine",
+        "dosage_frequency": "once a day"
+      }
+    },
+    {
+      "_id": "record_007",
+      "patient_id": "patient_id_007",
+      "medication_issuance_frequency": "as needed",
+      "medication_issuance_time": "after shower",
+      "medicine": {
+        "medicine_id": "med_007",
+        "medicine_name": "Hydrocortisone Cream",
+        "dosage_frequency": "as needed"
+      }
+    },
+    {
+      "_id": "record_008",
+      "patient_id": "patient_id_008",
+      "medication_issuance_frequency": "daily",
+      "medication_issuance_time": "morning",
+      "medicine": {
+        "medicine_id": "med_008",
+        "medicine_name": "Ibuprofen",
+        "dosage_frequency": "once a day"
+      }
+    },
+    {
+      "_id": "record_009",
+      "patient_id": "patient_id_009",
+      "medication_issuance_frequency": "when needed",
+      "medication_issuance_time": "on migraine onset",
+      "medicine": {
+        "medicine_id": "med_009",
+        "medicine_name": "Sumatriptan",
+        "dosage_frequency": "when needed"
+      }
+    },
+    {
+      "_id": "record_010",
+      "patient_id": "patient_id_010",
+      "medication_issuance_frequency": "twice daily",
+      "medication_issuance_time": "after meals",
+      "medicine": {
+        "medicine_id": "med_010",
+        "medicine_name": "Omeprazole",
+        "dosage_frequency": "twice a day"
+      }
+    }
+  ]
+  
