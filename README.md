@@ -17,7 +17,7 @@ This project is a Node.js Express application that focuses on querying the `Mong
   ```
   This command connects to the MongoDB instance running on `localhost` at port `27017` and imports the dataset into the `dbms_project` database, dropping the existing collections before importing.
 
-- **Queries (`Query1.js` to `Query5.js`)**: These files contain individual query scripts that perform various analyses on the data within the `dbms_project` database.
+- **Queries (`Query1.js` to `Query5.js`)**: These files contain individual query scripts that perform various analyses on the data within the `MongoDB_PatientManagementSystem` database.
 
 - **`runAllQueries.js`**: This script is used to execute all queries sequentially, including `init.js` and `Query1.js` to `Query5.js`. It ensures that the data is imported first before running the queries, and each query is executed in order.
 
