@@ -129,13 +129,3 @@ To install and run MongoDB using Docker, follow these steps:
    node runAllQueries.js
    ```
 
-## Dependencies
-
-- **`express`**: Web framework for Node.js.
-- **`mongodb`**: MongoDB Node.js driver for interacting with the MongoDB instance.
-- **`dotenv`**: Module to load environment variables.
-
-## License
-
-This project is licensed under the MIT License.
-
