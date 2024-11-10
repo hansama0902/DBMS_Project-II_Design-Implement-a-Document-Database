@@ -1,0 +1,112 @@
+Query 1 completed
+Top doctors by appointment count:
+1. Dr. Jane Smith: 2 appointments
+2. Dr. Sarah Green: 1 appointments
+3. Dr. Kevin Clark: 1 appointments
+4. Dr. Alex Johnson: 1 appointments
+5. Dr. Megan Scott: 1 appointments
+6. Dr. Emily Davis: 1 appointments
+7. Dr. David Lee: 1 appointments
+8. Dr. Lisa White: 1 appointments
+9. Dr. Chris Brown: 1 appointments
+Query 2 completed
+
+Appointments matching complex criteria:
+
+Appointment 1:
+  ID: appointment_004
+  Date: 2024-11-22
+  Patient: Emily Davis
+  Doctor: Dr. Jane Smith
+  Test: MRI
+
+Appointment 2:
+  ID: appointment_009
+  Date: 2024-11-20
+  Patient: James Martinez
+  Doctor: Dr. Kevin Clark
+  Test: Blood Test
+
+Appointment 3:
+  ID: appointment_006
+  Date: 2024-11-25
+  Patient: Sophia Wilson
+  Doctor: Dr. Lisa White
+  Test: Allergy Test
+
+Appointment 4:
+  ID: appointment_002
+  Date: 2024-11-15
+  Patient: Jane Smith
+  Doctor: Dr. Alex Johnson
+  Test: X-Ray
+
+Appointment 5:
+  ID: appointment_001
+  Date: 2024-11-10
+  Patient: John Doe
+  Doctor: Dr. Jane Smith
+  Test: Blood Test
+
+Appointment 6:
+  ID: appointment_005
+  Date: 2024-11-30
+  Patient: William Brown
+  Doctor: Dr. Chris Brown
+  Test: CT Scan
+
+Query 3 completed
+Patient patient_id_123 has 1 appointment(s).
+Query 4 completed
+Updated disease name for patient patient_id_001 successfully.
+Query 5 completed
+Patient ID: patient_id_006
+Name: Sophia Wilson
+Total Diseases: 1
+Diseases: Hypothyroidism
+--------------------------------------------------
+Patient ID: patient_id_001
+Name: John Doe
+Total Diseases: 1
+Diseases: Type 2 Diabetes
+--------------------------------------------------
+Patient ID: patient_id_004
+Name: Emily Davis
+Total Diseases: 1
+Diseases: Anxiety
+--------------------------------------------------
+Patient ID: patient_id_005
+Name: William Brown
+Total Diseases: 1
+Diseases: Hypertension
+--------------------------------------------------
+Patient ID: patient_id_010
+Name: Charlotte Garcia
+Total Diseases: 1
+Diseases: GERD
+--------------------------------------------------
+Patient ID: patient_id_003
+Name: Michael Johnson
+Total Diseases: 1
+Diseases: Asthma
+--------------------------------------------------
+Patient ID: patient_id_007
+Name: Liam Anderson
+Total Diseases: 1
+Diseases: Eczema
+--------------------------------------------------
+Patient ID: patient_id_009
+Name: James Martinez
+Total Diseases: 1
+Diseases: Migraine
+--------------------------------------------------
+Patient ID: patient_id_002
+Name: Jane Smith
+Total Diseases: 1
+Diseases: Hypertension
+--------------------------------------------------
+Patient ID: patient_id_008
+Name: Olivia Taylor
+Total Diseases: 1
+Diseases: Arthritis
+--------------------------------------------------
