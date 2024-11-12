@@ -1,0 +1,64 @@
+[
+  {
+    "_id": "survey_001",
+    "last_sync": "2024-11-11",
+    "symptom": "Cough and Fever",
+    "immuno_compromised": true
+  },
+  {
+    "_id": "survey_002",
+    "last_sync": "2024-11-10",
+    "symptom": "Headache and Fatigue",
+    "immuno_compromised": false
+  },
+  {
+    "_id": "survey_003",
+    "last_sync": "2024-11-09",
+    "symptom": "Sore Throat",
+    "immuno_compromised": false
+  },
+  {
+    "_id": "survey_004",
+    "last_sync": "2024-11-08",
+    "symptom": "Muscle Pain and Nausea",
+    "immuno_compromised": true
+  },
+  {
+    "_id": "survey_005",
+    "last_sync": "2024-11-07",
+    "symptom": "Chest Pain",
+    "immuno_compromised": false
+  },
+  {
+    "_id": "survey_006",
+    "last_sync": "2024-11-06",
+    "symptom": "Runny Nose and Sneezing",
+    "immuno_compromised": false
+  },
+  {
+    "_id": "survey_007",
+    "last_sync": "2024-11-05",
+    "symptom": "High Fever",
+    "immuno_compromised": true
+  },
+  {
+    "_id": "survey_008",
+    "last_sync": "2024-11-04",
+    "symptom": "Shortness of Breath",
+    "immuno_compromised": true
+  },
+  {
+    "_id": "survey_009",
+    "last_sync": "2024-11-03",
+    "symptom": "Vomiting and Diarrhea",
+    "immuno_compromised": false
+  },
+  {
+    "_id": "survey_010",
+    "last_sync": "2024-11-02",
+    "symptom": "Dizziness and Lightheadedness",
+    "immuno_compromised": false
+  }
+]
+
+  

@@ -6,7 +6,8 @@ const commands = [
   'mongoimport --host localhost --port 27017 --db patient_management --collection tests --file db/tests.json --jsonArray --drop',
   'mongoimport --host localhost --port 27017 --db patient_management --collection doctors --file db/doctors.json --jsonArray --drop',
   'mongoimport --host localhost --port 27017 --db patient_management --collection prescriptions --file db/prescriptions.json --jsonArray --drop',
-   'mongoimport --host localhost --port 27017 --db patient_management --collection medicine_record --file db/medicine_record.json --jsonArray --drop'
+   'mongoimport --host localhost --port 27017 --db patient_management --collection medicine_record --file db/medicine_record.json --jsonArray --drop',
+   'mongoimport --host localhost --port 27017 --db patient_management --collection surveys --file db/surveys.json --jsonArray --drop'
 ];
 
 commands.forEach((command) => {
