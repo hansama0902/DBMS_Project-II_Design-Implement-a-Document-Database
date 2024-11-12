@@ -7,16 +7,14 @@ This project is a Node.js Express application that focuses on querying the `Mong
 - **Loading the data**: Import patient management data files: `appointment.json`, `doctors.json`, `medicine_record.json`, `patients.json`, `prescriptions.json`, `tests.json`. These files contain structured data related to appointments, doctors, medicine records, patients, prescriptions, and tests.
 
 - **`init.js`**: This script is responsible for importing the dataset into MongoDB. It uses the `mongoimport` command to load data from JSON files into MongoDB collections:
-  ```bash
- 
- mongoimport --host localhost --port 27017 --db patient_management --collection patients --file db/patients.json --jsonArray --drop
- mongoimport --host localhost --port 27017 --db patient_management --collection appointments --file db/appointments.json --jsonArray --drop
- mongoimport --host localhost --port 27017 --db patient_management --collection tests --file db/tests.json --jsonArray --drop
- mongoimport --host localhost --port 27017 --db patient_management --collection doctors --file db/doctors.json --jsonArray --drop
- mongoimport --host localhost --port 27017 --db patient_management --collection prescriptions --file db/prescriptions.json --jsonArray --drop
+```bash
+mongoimport --host localhost --port 27017 --db patient_management --collection patients --file db/patients.json --jsonArray --drop
+mongoimport --host localhost --port 27017 --db patient_management --collection appointments --file db/appointments.json --jsonArray --drop
+mongoimport --host localhost --port 27017 --db patient_management --collection tests --file db/tests.json --jsonArray --drop
+mongoimport --host localhost --port 27017 --db patient_management --collection doctors --file db/doctors.json --jsonArray --drop
+mongoimport --host localhost --port 27017 --db patient_management --collection prescriptions --file db/prescriptions.json --jsonArray --drop
 mongoimport --host localhost --port 27017 --db patient_management --collection medicine_record --file db/medicine_record.json --jsonArray --drop
 mongoimport --host localhost --port 27017 --db patient_management --collection surveys --file db/surveys.json --jsonArray --drop
-  ```
   This command connects to the MongoDB instance running on `localhost` at port `27017` and imports the dataset into the `patient_management` database, dropping the existing collections before importing.
 
 - **Queries (`Query1.js` to `Query5.js`)**: These files contain individual query scripts that perform various analyses on the data within the `MongoDB_PatientManagementSystem` database.
