@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Edit</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center">Survey Edit</h2>
+        <form action="/updateSurvey" method="post" class="p-4 border rounded bg-light">
+            <!-- Survey ID-->
+            <div class="form-group">
+                <label for="survey_id">Survey ID</label>
+                <input type="text" class="form-control" id="survey_id" name="survey_id" value="<%= surveyObj.survey_id %>" readonly>
+            </div>
+
+            <!-- Last Sync -->
+            <div class="form-group">
+                <label for="last_sync">Last Sync</label>
+                <input type="date" class="form-control" id="last_sync" name="last_sync" value="<%= surveyObj.last_sync %>">
+            </div>
+
+            <!-- Symptom -->
+            <div class="form-group">
+                <label for="symptom">Symptom</label>
+                <input type="text" class="form-control" id="symptom" name="symptom" value="<%= surveyObj.symptom %>" placeholder="Enter Symptom">
+            </div>
+
+            <!-- Immuno Compromised -->
+            <div class="form-group">
+                <label for="immuno_compromised">Immuno Compromised</label>
+                <select class="form-control" id="immuno_compromised" name="immuno_compromised" required>
+                    <option value="">Select</option>
+                    <option value="1" <%= surveyObj.immuno_compromised === 1 ? 'selected' : '' %>>Yes</option>
+                    <option value="0" <%= surveyObj.immuno_compromised === 0 ? 'selected' : '' %>>No</option>
+                </select>
+            </div>
+
+            <!-- Patient ID -->
+            <div class="form-group">
+                <label for="patient_id">Patient ID</label>
+                <input type="text" class="form-control" id="patient_id" name="patient_id" value="<%= surveyObj.patient_id %>" readonly>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">Submit</button>
+        </form>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
