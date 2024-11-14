@@ -149,7 +149,7 @@ To install and run MongoDB using Docker, follow these steps:
 
 2. **Queries (`Query1.js` to `Query5.js`)**: These files contain various queries that analyze the imported data.
    - **Query1**: Aggregation query to count appointments per doctor, sorted in descending order using the MongoDB aggregation framework.
-   - **Query2**: Aggregation query with complex conditions (multiple expressions and logical operators). Condition 1: Appointment date between "2024-11-01" and "2024-11-30". Condition 2: Appointment by a specific doctor (Dr. Jane Smith) and test type is "Blood Test".
+   - **Query2**: Aggregation query with complex conditions (multiple expressions and logical operators). Condition 1: Appointment date between "2024-11-01" and "2024-11-15". Condition 2: Appointment by a specific doctor (Dr. Jane Smith) and test type is "Blood Test".
    - **Query3**: Counts the number of appointments for a specified patient by counting documents for that specific user.
    - **Query4**: Updates the disease name directly in the `disease_history` field by updating a document based on a query parameter.
    - **Query5**: Aggregation query to count the number of diseases in each patient's `disease_history` and list the disease names.
