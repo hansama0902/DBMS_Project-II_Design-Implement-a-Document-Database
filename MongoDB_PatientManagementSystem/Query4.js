@@ -9,10 +9,10 @@ async function updateDiseasesName(patientId, oldDiseaseName, newDiseaseName) {
     const database = client.db("patient_management");
     const patientsCollection = database.collection("patients");
 
-    // Update disease name directly in disease_history field (since it's an object, not an array)
+    // Update disease name in the disease_history array for a specified patient
     const updateResult = await patientsCollection.updateOne(
       { _id: patientId, "disease_history.diseases_name": oldDiseaseName },
-      { $set: { "disease_history.diseases_name": newDiseaseName } }
+      { $set: { "disease_history.$.diseases_name": newDiseaseName } }
     );
 
     if (updateResult.modifiedCount > 0) {
@@ -24,8 +24,10 @@ async function updateDiseasesName(patientId, oldDiseaseName, newDiseaseName) {
     await client.close();
   }
 }
-// change it's part 
-updateDiseasesName("patient_id_001", "Diabetes", "Type 2 Diabetes").catch(console.dir);
+
+// Update disease name in patient's disease history
+updateDiseasesName("000001", "Diabetes", "Type 2 Diabetes").catch(console.dir);
+
 
 
 

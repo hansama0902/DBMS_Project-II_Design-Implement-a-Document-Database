@@ -15,11 +15,11 @@ async function run() {
         {
           $match: {
             $or: [
-              // Condition 1: Appointment date is between '2024-11-01' and '2024-11-30
+              // Condition 1: Appointment date is between '2024-11-01' and '2024-11-15'
               {
                 appointment_date: {
                   $gte: "2024-11-01",
-                  $lte: "2024-11-30"
+                  $lte: "2024-11-15"
                 }
               },
               // Condition 2: Appointment conducted by a specific doctor (Dr. Jane Smith) and test type is 'Blood Test'
@@ -36,10 +36,10 @@ async function run() {
           $project: {
             _id: 1,
             appointment_date: 1,
-            patient_first_name: { $arrayElemAt: ["$patient_reference.first_name", 0] },
-            patient_last_name: { $arrayElemAt: ["$patient_reference.last_name", 0] },
-            doctor_name: { $arrayElemAt: ["$doctor_reference.doctor_name", 0] },
-            test_type: { $arrayElemAt: ["$test_reference.test_type", 0] }
+            "patient_reference.first_name": 1,
+            "patient_reference.last_name": 1,
+            "doctor_reference.doctor_name": 1,
+            "test_reference.test_type": 1
           }
         }
       ])
@@ -50,9 +50,9 @@ async function run() {
       console.log(`Appointment ${index + 1}:`);
       console.log(`  ID: ${appointment._id}`);
       console.log(`  Date: ${appointment.appointment_date}`);
-      console.log(`  Patient: ${appointment.patient_first_name} ${appointment.patient_last_name}`);
-      console.log(`  Doctor: ${appointment.doctor_name}`);
-      console.log(`  Test: ${appointment.test_type}\n`);
+      console.log(`  Patient: ${appointment.patient_reference.first_name} ${appointment.patient_reference.last_name}`);
+      console.log(`  Doctor: ${appointment.doctor_reference.doctor_name}`);
+      console.log(`  Test: ${appointment.test_reference.test_type}\n`);
     });
   } finally {
     await client.close();

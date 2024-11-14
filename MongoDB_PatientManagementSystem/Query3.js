@@ -11,7 +11,7 @@ async function countUserAppointments(patientId) {
 
     // Count the number of appointments for a specified patient.
     const appointmentCount = await appointmentsCollection.countDocuments({
-      "patient_reference._id": patientId
+      "patient_reference.patient_id": patientId
     });
 
     console.log(`Patient ${patientId} has ${appointmentCount} appointment(s).`);
@@ -20,5 +20,5 @@ async function countUserAppointments(patientId) {
   }
 }
 
-countUserAppointments("patient_id_123").catch(console.dir);
+countUserAppointments("000001").catch(console.dir);
 
