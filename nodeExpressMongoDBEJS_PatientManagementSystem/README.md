@@ -1,5 +1,5 @@
-# nodeExpressSqliteEJS
-An Example Application Using Node + Expres + SQlite + EJS implementing a simple reference manager
+# nodeExpressMongoDBEJS
+An Example Application Using Node + Expres + sMongoDB + EJS implementing a simple reference manager
 
 
 ## Using it
