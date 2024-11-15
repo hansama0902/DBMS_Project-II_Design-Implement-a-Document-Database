@@ -116,31 +116,6 @@ router.post("/updatePatient", async (req, res) => {
   }
 });
 
-// // Get Disease History
-// router.get("/DiseaseHistory", async (req, res) => {
-//     try {
-//       const db = client.db(dbName);
-//       const patientCollection = db.collection("patients");
-//       const historyQuery = {};
-//       console.log(req.query);
-//       if (req.query.Id) {
-//         historyQuery["disease_history._id"]  = { $regex: req.query.Id, $options: 'i' };
-//         console.log( historyQuery);
-//       }
-//       if (req.query.patientId) {
-//         historyQuery["disease_history.patient_id"] = { $regex: req.query.patientId, $options: 'i' };
-        
-//       }
-  
-//       const patients = await patientCollection.find(historyQuery).toArray();
-//       console.log(patients);
-  
-//       res.render('diseasesHistory', { res: patients });
-//     } catch (err) {
-//       console.error("Error retrieving disease history:", err);
-//       res.status(500).send("Database error occurred");
-//     }
-//   });
 router.get("/DiseaseHistory", async (req, res) => {
   try {
     const db = client.db(dbName);
